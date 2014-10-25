@@ -13,7 +13,7 @@
 #define FOSC       SYS_FREQ                                        /**< CPU clock frequency */
 #define	GetPeripheralClock()	(SYS_FREQ/(1 << OSCCONbits.PBDIV))
 #define	GetInstructionClock()	(SYS_FREQ)                         /**< Instructions frequency */
-#define PBCLK       SYS_FREQ/4
+#define PBCLK       SYS_FREQ
 #define Fsck        375000
 #define BRG         400000      /**< I2C frequency FastMode = 400kHz */
 #define UARTBAUDRATE 230400

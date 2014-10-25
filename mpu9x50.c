@@ -38,7 +38,7 @@ static int set_int_enable(unsigned char enable);
  * #define MPU6500
  * #define AK8963_SECONDARY
  */
-#define MPU9150 // DEFINITION OF THE SENSOR IN USE
+#define MPU9250 // DEFINITION OF THE SENSOR IN USE
 
 #if defined MPU9150
 #ifndef MPU6050

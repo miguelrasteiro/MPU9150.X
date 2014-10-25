@@ -204,7 +204,7 @@ float tempo=0;
     {
         // Colocar em função
         // temptime = ReadTimer1(); // Reads time elapsed
-        // cycle_time = (float)((double) (temptime * T1overflow * 256 * 4) / PBCLK );// tempo = valortimer*overflow*prescaler*4/fosc ;
+        // cycle_time = (float)((double) (temptime * T1overflow * 256) / PBCLK );// tempo = valortimer*overflow*prescaler*4/fosc ;
 
         // Atualizations each 10 ms
         if (new_data)
@@ -215,7 +215,7 @@ float tempo=0;
             tempo = (float) (CT_TICKS_SINCE(count))/ONE_SECOND;
 
             temptime = ReadTimer1(); // Reads time elapsed
-            cycle_time = (float)((double) (temptime * T1overflow * 256 * 4) / PBCLK );// tempo = valortimer*overflow*prescaler*4/fosc ;
+            cycle_time = (float)((double) (temptime * T1overflow * 256) / PBCLK );// tempo = valortimer*overflow*prescaler*4/fosc ;
             time_elapsed = time_elapsed + cycle_time;
             sampleFreq = 1/cycle_time;
 
@@ -512,7 +512,7 @@ float get_time (void)
 
     // Colocar em função
     temptime = ReadTimer1(); // Reads time elapsed
-    elapsed_time = (float)((double) (temptime * T1overflow * 256 * 4) / PBCLK );// tempo = valortimer*overflow*prescaler*4/fosc ;
+    elapsed_time = (float)((double) (temptime * T1overflow * 256) / PBCLK );// tempo = valortimer*overflow*prescaler*4/fosc ;
 
     return elapsed_time;
 }
